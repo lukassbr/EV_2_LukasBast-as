@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegio Particular Subvencionado</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-#EDCA2F">
+    <!-- Logo del colegio -->
+    <a class="navbar-brand" href="#">
+        <img id="navLogo" src="img/logo_48x48.png" width="40" height="40" class="d-inline-block align-top" alt="Logo">
+        Colegio Cumbres del Sur
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Elementos de la barra de navegación -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <!-- Menú desplegable de Cursos -->
+            <li class="nav-item dropdown" id="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: #EDCA2F;">Educación Preescolar</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #EDCA2F;">Educación Básica</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #EDCA2F;">Educación Media</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="#">Admisiones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+  <!-- Carrusel de imágenes -->
+  <div class="container" style="width: 100%;" id="contenedorCarrusel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/escuela.jpg" class="mx-auto d-block" alt="Edificio">
+          <div class="carousel-caption d-none d-md-block" style= "background-color: rgba(56, 55, 55, 0.993);">
+            <h3 style="color:beige; font-style:normal;">Tenemos una maravillosa infraestructura para sus hijos.
+            </h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/patio.jpg" class="mx-auto d-block" alt="Patio_escuela">
+        </div>
+        <div class="carousel-item">
+          <img src="img/prueba.jpg"  class="mx-auto d-block" alt="interiorEscuela">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" style="background-color: transparent;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" style="background-color: transparent;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        
+      </button>
+    </div>
+  </div>
+  
+  <!-- Sección de Tarjetas -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Actividades Extracurriculares</h5>
+            <p class="card-text">Descubre las actividades extracurriculares que ofrecemos para nuestros estudiantes.</p>
+            <div class="btn btn-primary">Ir</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Educativo</h5>
+            <p class="card-text">Conoce nuestro enfoque pedagógico y nuestro compromiso con la excelencia académica.</p>
+            <div class="btn btn-primary">Ir</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Eventos y Celebraciones</h5>
+            <p class="card-text">Entérate de los próximos eventos y celebraciones en nuestro colegio. Y revisa las fotografías de los eventos pasados.</p>
+            <div class="btn btn-primary">Ir</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario de contacto -->
+  <div class="container mt-5" id="contenedorForm">
+    <h2>Contáctanos</h2>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+      </div>
+      <button id="boton" type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+
+</body>
+</html>

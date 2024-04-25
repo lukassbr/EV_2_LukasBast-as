@@ -1,0 +1,61 @@
+/* Estilos barra de navegacion */
+.navbar {
+    background-color: #EDCA2F; /* Color de la barra de navegacion */
+}
+
+#navLogo{
+  margin-left: 8px;
+}
+
+.dropdown-menu{
+  background-color: #515198;
+}
+
+#navbarDropdown{
+  color:black
+}
+
+/* Estilo a nivel etiqueta HTML*/
+body{
+  background-color: #6E674D; /* color del cuerpo */
+}
+
+ /* Contenedor para el carrusel*/
+#contenedorCarrusel{
+  width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  background-color: transparent;
+}
+/* Estilos para la imagen del carrusel */
+.carousel-item img {
+    margin: auto;
+    width: 100%;
+    max-height: 500px; /* Ajusta la altura máxima de las imágenes del carrusel */
+  }
+  
+  /* Estilos para las tarjetas */
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .form-group label {
+    font-weight: bold; /* Hace que las etiquetas del formulario sean negritas */
+  }
+
+/* Estilo contenedor del formulario a nivel id*/
+#contenedorForm{
+  margin-bottom: 20px;
+  background-color: #988B51;
+}
+
+#boton{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
